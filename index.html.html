@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clixon is your advertising partner, offering innovative digital marketing solutions and brand storytelling.">
+    <meta name="keywords" content="advertising, digital marketing, branding, creative design, campaign management">
+    <title>Clixon - Your Advertising Partner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .hamburger {
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #fff;
+            border: none;
+            background: none;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: #333;
+            border-radius: 5px;
+            overflow: hidden;
+            z-index: 1000;
+        }
+        .dropdown-menu a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px 15px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+        .dropdown-menu a:hover {
+            background: #444;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .hero {
+            background-image: url('clixon1.jpg');
+            background-color: skyblue;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 500px;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .btn {
+            padding: 10px 20px;
+            background: #f04e23;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+            margin-bottom: 20px;
+        }
+        .btn:hover {
+            background: #c03c1b;
+        }
+        section {
+            padding: 50px 20px;
+        }
+        section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        section p {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .contact-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact-links a {
+            text-decoration: none;
+            color: #f04e23;
+            font-weight: bold;
+            margin: 0 10px;
+            font-size: 1.1rem;
+        }
+        .contact-links a:hover {
+            color: #c03c1b;
+        }
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            max-width: 400px;
+        }
+        .modal-content h2 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        .close-btn {
+            background: #f04e23;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .close-btn:hover {
+            background: #c03c1b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <h1><img src="logo.png" alt="Clixon" style="height: 40px;"></h1>
+                <div class="dropdown">
+                    <button class="hamburger">&#9776;</button>
+                    <div class="dropdown-menu">
+                        <a href="#">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Transform Your Vision Into Reality</h1>
+            <p>Partner with Clixon to elevate your brand and captivate your audience through innovative advertising solutions.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Clixon, we believe in transforming your brand's vision into dynamic, attention-grabbing visual displays that captivate your audience. With a blend of cutting-edge technology and innovative designs, we offer high-quality, customizable display advertising solutions tailored to your unique needs. Whether you're aiming for large-scale digital billboards or sleek indoor displays, Clixon ensures your message stands out, engages, and leaves a lasting impression.</p>
+            <h3>Why Choose Clixon?</h3>
+            <ul>
+                <li><strong>Innovative Displays:</strong> Utilizing the latest in digital technology, we provide displays that are both visually stunning and highly functional.</li>
+                <li><strong>Tailored Solutions:</strong> Every brand is different, and we create custom displays that align with your goals and audience.</li>
+                <li><strong>Reliable Support:</strong> From installation to maintenance, Clixon offers continuous support, ensuring your display always performs at its best.</li>
+                <li><strong>Effective Reach:</strong> Engage customers in high-traffic areas, maximizing visibility and impact.</li>
+            </ul>
+            <p>Let Clixon bring your brand’s story to life through captivating displays that speak louder than words.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>At Clixon, we specialize in delivering dynamic and impactful display advertising solutions tailored to your brand’s needs. With a focus on innovation, creativity, and technology, we provide services that help your brand captivate its audience and leave a lasting impression. If you're looking for interactive displays, we offer a full suite of services designed to maximize visibility and engagement.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have a question or want to start a project? Get in touch with us today!</p>
+            <p>Email: clixonads@clixon.in | Phone: +91-9996211872</p>
+            <div class="contact-links">
+                <a href="https://www.instagram.com/_clixon" target="_blank">Follow us on Instagram</a>
+                <a href="https://wa.me/1234567890" target="_blank">Chat with us on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Clixon. All Rights Reserved.</p>
+    </footer>
+
+    <div class="modal" id="popupModal">
+        <div class="modal-content">
+            <h2>Thanks for visiting Clixon!</h2>
+            <button class="close-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('popupModal').style.display = 'flex';
+        };
+
+        function closeModal() {
+            document.getElementById('popupModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
